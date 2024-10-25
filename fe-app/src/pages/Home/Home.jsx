@@ -4,6 +4,7 @@ import { addPlaying, getListDame, login } from '../../services';
 import Loading from '../../components/Loading';
 import { useAuthData } from '../../stores';
 import { FaCircleCheck } from 'react-icons/fa6';
+import PredictionCard from '../../components/PredictionCard';
 
 function Home() {
     const [coin, setCoin] = useState(0);
@@ -129,7 +130,7 @@ function Home() {
 
     return (
         <div className="flex items-center justify-center min-h-full pt-10">
-            {contextHolder}
+            {/* {contextHolder}
             <div className="m-auto grid grid-cols-1 gap-10">
                 {loading ? (
                     <div
@@ -276,7 +277,8 @@ function Home() {
                         </div>
                     ))
                 )}
-            </div>
+            </div> */}
+            <PredictionCard />
         </div>
     );
 }
